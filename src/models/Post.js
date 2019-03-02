@@ -4,12 +4,12 @@ module.exports = mongoose.model('Post', new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    match: /^([a-z]{3,15}(,|.) ){5,15}$/
+    match: /^([a-z]{3,8}(,|\.) ){4,7}$/
   },
   content: {
     type: String,
     required: true,
-    match: /^([a-z]{3,15}(,|.) ){50,150}$/
+    match: /^([a-z]{3,10}(,|\.)? ){50,250}$/
   },
   createdAt: {
     type: Date,
